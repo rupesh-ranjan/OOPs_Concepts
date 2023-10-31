@@ -12,16 +12,24 @@ namespace OOPs_Concepts
         public static void Main(string[] args)
         {
             #region Person
-            // Person person = new Person();
+            Person person = new Person(new DateTime(1998, 3, 1));
             //var person = Person.Parse("Rupesh");
-            ////person.Name = "Rupesh";
+            //person.Name = "Rupesh";
+            //person.SetBirthdate(DateTime.Now);
+            //Console.WriteLine(person.GetBirthdate());
             //person.Introduce("Kumar");
+
+            Console.WriteLine(person.Age);
             #endregion
 
             #region Customer
             //var customer = new Customer(1, "Jhon");
-            //Console.WriteLine(customer.Id);
-            //Console.WriteLine(customer.Name);
+            ////Console.WriteLine(customer.Id);
+            ////Console.WriteLine(customer.Name);
+            //customer.Orders.Add(new Order());
+            //customer.Orders.Add(new Order());
+            //customer.Promote();
+            //Console.WriteLine(customer.Orders.Count);
             #endregion
 
             #region Order
@@ -35,13 +43,9 @@ namespace OOPs_Concepts
             #endregion
 
             #region Calculator
-            var calculator = new Calculator();
-            Console.WriteLine(calculator.Add(1, 2));
-            Console.WriteLine(calculator.Add(1, 2, 3));
-            Console.WriteLine(calculator.Add(1, 2, 3, 4));
-            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4 }));
-
+            //UseParams();
             #endregion
+
 
         }
 
@@ -62,6 +66,15 @@ namespace OOPs_Concepts
             {
                 Console.WriteLine("An unexpected error occured.");
             }
+        }
+
+        static void UseParams()
+        {
+            var calculator = new Calculator();
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2, 3));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4));
+            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4 }));
         }
     }
     

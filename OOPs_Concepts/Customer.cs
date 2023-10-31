@@ -4,7 +4,8 @@
     {
         public int Id;
         public string Name;
-        public List<Order> Orders;
+        public readonly List<Order> Orders;
+        //public List<Order> Orders = new List<Order>();
 
 
         public Customer()
@@ -18,6 +19,12 @@
         public Customer(int id, string name) : this(id)
         {
             this.Name = name;
+        }
+
+        public void Promote()
+        {
+            //Orders = new List<Order>();
+
         }
     }
     
