@@ -19,7 +19,7 @@ namespace OOPs_Concepts
             //Console.WriteLine(person.GetBirthdate());
             //person.Introduce("Kumar");
 
-            Console.WriteLine(person.Age);
+            //Console.WriteLine(person.Age);
             #endregion
 
             #region Customer
@@ -46,6 +46,11 @@ namespace OOPs_Concepts
             //UseParams();
             #endregion
 
+            #region Indexer/Cookie
+            var cookie = new HttpCookie();
+            cookie["name"] = "Rupesh";
+            Console.WriteLine(cookie["name"]);
+            #endregion
 
         }
 
