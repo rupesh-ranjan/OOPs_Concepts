@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Customer.txtcs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Customer.txtcs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Amazon\Amazon.csproj" />
+  </ItemGroup>
+
 </Project>

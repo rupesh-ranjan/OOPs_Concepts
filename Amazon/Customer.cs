@@ -1,16 +1,13 @@
-﻿namespace OOPs_Concepts
+﻿namespace Amazon
 {
     public class Customer
     {
         public int Id;
         public string Name;
-        public readonly List<Order> Orders;
-        //public List<Order> Orders = new List<Order>();
 
 
         public Customer()
         {
-            Orders = new List<Order>();
         }
         public Customer(int id) :this()
         { 
@@ -24,8 +21,24 @@
         public void Promote()
         {
             //Orders = new List<Order>();
+            //var rating = CalculateRating(excludeOrders: true);
+            //if (rating == 0) 
+            //{
+            //    Console.WriteLine("Promoted");
+            //}
+
+            var calculator = new RateCalculator();
+            var rating = calculator.Calculate();
 
         }
+
+        protected int CalculateRating(bool excludeOrders)
+        {
+            return 0;
+        }
+
+
+
     }
-    
+
 }

@@ -1,19 +1,15 @@
 ﻿namespace OOPs_Concepts
 {
-    public partial class Program
+    public class Calculator
     {
-        public class Calculator
+        public int Add(params int[] numbers)
         {
-            public int Add(params int[] numbers)
+            var sum = 0;
+            foreach (var number in numbers)
             {
-                var sum = 0;
-                foreach (var number in numbers)
-                {
-                    sum += number;
-                }
-                return sum;
+                sum += number;
             }
+            return sum;
         }
     }
-    
 }
